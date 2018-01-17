@@ -1,3 +1,0 @@
-[submodule "app"]
-	path = app
-	url = ssh://git@github.com/rkl-/blog.rkl.io

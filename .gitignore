@@ -1,4 +1,5 @@
 *.env
 .idea
 logs/app/*
+app/*
 docker-compose.yml
