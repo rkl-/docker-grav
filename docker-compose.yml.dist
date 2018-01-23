@@ -12,7 +12,7 @@ services:
 
   app:
     build: docker/app
-    image: blog.rkl.io/app
+    image: rkl/docker-grav/app
     env_file:
       - ./app.env
     networks:
@@ -25,7 +25,7 @@ services:
 
   nginx:
     build: docker/nginx
-    image: blog.rkl.io/nginx
+    image: rkl/docker-grav/nginx
     networks:
       app_tier:
         ipv4_address: 172.11.1.2
@@ -35,3 +35,4 @@ services:
       - app:ro
     volumes:
       - ./docker/nginx/proxy.conf:/etc/nginx/conf.d/default.conf
+
